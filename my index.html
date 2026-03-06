@@ -1,0 +1,1059 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya Saraswat | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+/* Animated Background */
+
+body{
+height:100vh;
+background:linear-gradient(-45deg,#1a2a6c,#b21f1f,#fdbb2d,#0f2027);
+background-size:400% 400%;
+animation:gradientBG 10s ease infinite;
+color:white;
+}
+
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Floating circles */
+
+.circle{
+position:fixed;
+border-radius:50%;
+background:rgba(255,255,255,0.1);
+animation:float 8s infinite ease-in-out;
+}
+
+.circle:nth-child(1){
+width:120px;
+height:120px;
+top:10%;
+left:5%;
+}
+
+.circle:nth-child(2){
+width:200px;
+height:200px;
+bottom:10%;
+right:5%;
+animation-delay:2s;
+}
+
+.circle:nth-child(3){
+width:150px;
+height:150px;
+top:60%;
+left:10%;
+animation-delay:4s;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-40px);}
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:20px;
+background:rgba(0,0,0,0.3);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd369;
+}
+
+/* Sections */
+
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+/* Home */
+
+.home h1{
+font-size:55px;
+animation:fadeIn 2s;
+}
+
+.home p{
+font-size:22px;
+margin-top:10px;
+color:#eee;
+}
+
+button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+background:#ffd369;
+color:black;
+font-weight:bold;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+/* Glass cards */
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:25px;
+margin:20px auto;
+max-width:700px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.2);
+}
+
+/* Skills */
+
+.skill{
+margin:20px 0;
+text-align:left;
+}
+
+.skill span{
+font-size:14px;
+}
+
+.bar{
+background:rgba(255,255,255,0.2);
+height:10px;
+border-radius:10px;
+margin-top:5px;
+overflow:hidden;
+}
+
+.progress{
+height:100%;
+background:#ffd369;
+animation:load 3s;
+}
+
+@keyframes load{
+0%{width:0;}
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:30px;
+background:rgba(0,0,0,0.4);
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="home">
+<h1>Divya Saraswat</h1>
+<p>BCA Student | Aspiring Data Analyst | Web Developer</p>
+<button onclick="hire()">Hire Me</button>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+I am a BCA student passionate about **Data Analysis and Web Development**.
+I enjoy working with data, building websites and learning new technologies.
+My goal is to become a professional **Data Analyst and Web Developer**.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="card">
+
+<div class="skill">
+<span>HTML</span>
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<span>CSS</span>
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<span>JavaScript</span>
+<div class="bar"><div class="progress" style="width:75%"></div></div>
+</div>
+
+<div class="skill">
+<span>PHP & MySQL</span>
+<div class="bar"><div class="progress" style="width:70%"></div></div>
+</div>
+
+<div class="skill">
+<span>Excel / Data Analysis</span>
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Student Data Analysis</h3>
+<p>Analyzed student data using Excel and database tools.</p>
+</div>
+
+<div class="card">
+<h3>Personal Portfolio Website</h3>
+<p>Responsive portfolio built with HTML, CSS and JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Simple Login System</h3>
+<p>Login system created using PHP and MySQL.</p>
+</div>
+
+</section>
+
+<section id="certificates">
+
+<h2>Certificates</h2>
+
+<div class="card">
+IBM SkillsBuild AI Internship Certificate
+</div>
+
+<div class="card">
+Diploma in Computer Application
+</div>
+
+<div class="card">
+Diploma in Web Designing & Graphics Designing
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+Email: divyasaraswat04@gmail.com
+</div>
+
+</section>
+
+<footer>
+© 2026 Divya Saraswat | Portfolio
+</footer>
+
+<script>
+
+function hire(){
+alert("Thank you for visiting my portfolio!");
+}
+
+</script>
+
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya Saraswat | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(-45deg,#141e30,#243b55,#1f4037,#99f2c8);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+color:white;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Floating shapes */
+
+.circle{
+position:fixed;
+border-radius:50%;
+background:rgba(255,255,255,0.1);
+animation:float 6s infinite ease-in-out;
+}
+
+.circle:nth-child(1){
+width:150px;
+height:150px;
+top:10%;
+left:5%;
+}
+
+.circle:nth-child(2){
+width:200px;
+height:200px;
+bottom:10%;
+right:5%;
+animation-delay:2s;
+}
+
+.circle:nth-child(3){
+width:120px;
+height:120px;
+top:60%;
+left:15%;
+animation-delay:4s;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-30px);}
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:18px;
+background:rgba(0,0,0,0.3);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd369;
+}
+
+/* Sections */
+
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+h2{
+margin-bottom:30px;
+font-size:32px;
+}
+
+/* Home */
+
+.home h1{
+font-size:50px;
+}
+
+.home p{
+font-size:22px;
+margin-top:10px;
+color:#ddd;
+}
+
+/* Buttons */
+
+.btn{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+background:#ffd369;
+color:black;
+font-weight:bold;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
+margin-right:10px;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* Glass Cards */
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:25px;
+margin:20px auto;
+max-width:700px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:rgba(255,255,255,0.2);
+}
+
+/* Skills */
+
+.skill{
+margin:18px 0;
+text-align:left;
+}
+
+.bar{
+background:rgba(255,255,255,0.2);
+height:10px;
+border-radius:10px;
+margin-top:5px;
+overflow:hidden;
+}
+
+.progress{
+height:100%;
+background:#ffd369;
+animation:load 2.5s;
+}
+
+@keyframes load{
+0%{width:0}
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:25px;
+background:rgba(0,0,0,0.4);
+margin-top:40px;
+}
+
+.cursor{
+border-right:3px solid #ffd369;
+padding-right:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#qualification">Qualification</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="home">
+
+<h1>Divya Saraswat</h1>
+
+<p><span id="typing"></span><span class="cursor"></span></p>
+
+<button class="btn" onclick="hire()">Hire Me</button>
+
+<a href="Divya_Saraswat_Resume.pdf" download>
+<button class="btn">Download Resume</button>
+</a>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+I am a BCA student passionate about Data Analysis and Web Development.
+I enjoy building websites, working with data and learning new technologies.
+My goal is to become a professional Data Analyst and Web Developer.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="card">
+
+<div class="skill">HTML
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">CSS
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">JavaScript
+<div class="bar"><div class="progress" style="width:75%"></div></div>
+</div>
+
+<div class="skill">Bootstrap
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+<div class="skill">jQuery
+<div class="bar"><div class="progress" style="width:70%"></div></div>
+</div>
+
+<div class="skill">PHP
+<div class="bar"><div class="progress" style="width:70%"></div></div>
+</div>
+
+<div class="skill">Java
+<div class="bar"><div class="progress" style="width:65%"></div></div>
+</div>
+
+<div class="skill">C Programming
+<div class="bar"><div class="progress" style="width:65%"></div></div>
+</div>
+
+<div class="skill">MySQL
+<div class="bar"><div class="progress" style="width:75%"></div></div>
+</div>
+
+<div class="skill">Excel / Data Analysis
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+<div class="skill">Video Editing
+<div class="bar"><div class="progress" style="width:70%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="qualification">
+
+<h2>Qualification</h2>
+
+<div class="card">10th Pass</div>
+<div class="card">12th Pass</div>
+<div class="card">B.Com (Hons) - Pursuing</div>
+<div class="card">BCA - Pursuing</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Student Data Analysis</h3>
+<p>Analyzed student data using Excel and database tools.</p>
+</div>
+
+<div class="card">
+<h3>Personal Portfolio Website</h3>
+<p>Responsive portfolio built with HTML, CSS and JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Simple Login System</h3>
+<p>Login system created using PHP and MySQL.</p>
+</div>
+
+</section>
+
+<section id="certificates">
+
+<h2>Certificates</h2>
+
+<div class="card">IBM SkillsBuild AI Internship Certificate</div>
+<div class="card">Diploma in Computer Application</div>
+<div class="card">Diploma in Web Designing & Graphics Designing</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+Email: divyasaraswat04@gmail.com
+</div>
+
+</section>
+
+<footer>
+© 2026 Divya Saraswat | Portfolio
+</footer>
+
+<script>
+
+/* typing animation */
+
+const text = "BCA Student | Aspiring Data Analyst | Web Developer";
+let i = 0;
+
+function typing(){
+if(i < text.length){
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(typing,60);
+}
+}
+
+typing();
+
+/* button */
+
+function hire(){
+alert("Thank you for visiting my portfolio!");
+}
+
+</script>
+
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya Saraswat | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(-45deg,#141e30,#243b55,#1f4037,#99f2c8);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+color:white;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* floating shapes */
+
+.circle{
+position:fixed;
+border-radius:50%;
+background:rgba(255,255,255,0.1);
+animation:float 6s infinite ease-in-out;
+}
+
+.circle:nth-child(1){
+width:150px;
+height:150px;
+top:10%;
+left:5%;
+}
+
+.circle:nth-child(2){
+width:200px;
+height:200px;
+bottom:10%;
+right:5%;
+animation-delay:2s;
+}
+
+.circle:nth-child(3){
+width:120px;
+height:120px;
+top:60%;
+left:15%;
+animation-delay:4s;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-30px);}
+}
+
+/* navbar */
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:18px;
+background:rgba(0,0,0,0.3);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd369;
+}
+
+/* sections */
+
+section{
+padding:80px 10%;
+text-align:center;
+}
+
+h2{
+margin-bottom:30px;
+font-size:32px;
+}
+
+/* home */
+
+.home h1{
+font-size:50px;
+}
+
+.home p{
+font-size:22px;
+margin-top:10px;
+color:#ddd;
+}
+
+/* buttons */
+
+.btn{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+background:#ffd369;
+color:black;
+font-weight:bold;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
+margin-right:10px;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* cards */
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:25px;
+margin:20px auto;
+max-width:700px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:rgba(255,255,255,0.2);
+}
+
+/* skills */
+
+.skill{
+margin:18px 0;
+text-align:left;
+}
+
+.bar{
+background:rgba(255,255,255,0.2);
+height:10px;
+border-radius:10px;
+margin-top:5px;
+overflow:hidden;
+}
+
+.progress{
+height:100%;
+background:#ffd369;
+animation:load 2.5s;
+}
+
+@keyframes load{
+0%{width:0}
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:rgba(0,0,0,0.4);
+margin-top:40px;
+}
+
+.cursor{
+border-right:3px solid #ffd369;
+padding-right:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#qualification">Qualification</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="home">
+
+<h1>Divya Saraswat</h1>
+
+<p><span id="typing"></span><span class="cursor"></span></p>
+
+<button class="btn" onclick="hire()">Hire Me</button>
+
+<a href="images/resume.jpg" target="resume">
+<button class="btn">View Resume</button>
+</a>
+
+<a href="images/resume.jpg" download>
+<button class="btn">Download Resume</button>
+</a>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+I am a BCA student passionate about Data Analysis and Web Development.
+I enjoy building websites, working with data and learning new technologies.
+My goal is to become a professional Data Analyst and Web Developer.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="card">
+
+<div class="skill">HTML<div class="bar"><div class="progress" style="width:90%"></div></div></div>
+
+<div class="skill">CSS<div class="bar"><div class="progress" style="width:85%"></div></div></div>
+
+<div class="skill">JavaScript<div class="bar"><div class="progress" style="width:75%"></div></div></div>
+
+<div class="skill">Bootstrap<div class="bar"><div class="progress" style="width:80%"></div></div></div>
+
+<div class="skill">jQuery<div class="bar"><div class="progress" style="width:70%"></div></div></div>
+
+<div class="skill">PHP<div class="bar"><div class="progress" style="width:70%"></div></div></div>
+
+<div class="skill">Java<div class="bar"><div class="progress" style="width:65%"></div></div></div>
+
+<div class="skill">C Programming<div class="bar"><div class="progress" style="width:65%"></div></div></div>
+
+<div class="skill">MySQL<div class="bar"><div class="progress" style="width:75%"></div></div></div>
+
+<div class="skill">Excel / Data Analysis<div class="bar"><div class="progress" style="width:80%"></div></div></div>
+
+<div class="skill">Video Editing<div class="bar"><div class="progress" style="width:70%"></div></div></div>
+
+</div>
+
+</section>
+
+<section id="qualification">
+
+<h2>Qualification</h2>
+
+<div class="card">10th Pass</div>
+<div class="card">12th Pass</div>
+<div class="card">B.Com (Hons) - Pursuing</div>
+<div class="card">BCA - Pursuing</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Student Data Analysis</h3>
+<p>Analyzed student marks and attendance data using Excel.</p>
+</div>
+
+<div class="card">
+<h3>University Website</h3>
+<p>Developed a university website using HTML, CSS and JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Created a personal portfolio website to showcase projects and skills.</p>
+</div>
+
+</section>
+
+<section id="certificates">
+
+<h2>Certificates</h2>
+
+<div class="card">IBM SkillsBuild AI Internship Certificate</div>
+<div class="card">Diploma in Computer Application</div>
+<div class="card">Diploma in Web Designing & Graphic Designing</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+Email: divyasaraswat04@gmail.com
+</div>
+
+</section>
+
+<footer>
+© 2026 Divya Saraswat | Portfolio
+</footer>
+
+<script>
+
+const text="BCA Student | Aspiring Data Analyst | Web Developer";
+let i=0;
+
+function typing(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,60);
+}
+}
+
+typing();
+
+function hire(){
+alert("Thank you for visiting my portfolio!");
+}
+
+</script>
+
+</body>
+</html>
